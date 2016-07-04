@@ -15,12 +15,14 @@
 <spring:url value="/resources/css/table.css" var="tableCSS" />
 <spring:url value="/resources/css/input.css" var="inputCSS" />
 <spring:url value="/resources/css/img.css" var="imgCSS" />
+<spring:url value="/resources/css/messages.css" var="messagesCSS" />
 <spring:url value="/resources/images" var="images" />
 
 <link href="${bodyCSS}" rel="stylesheet" type="text/css" />
 <link href="${tableCSS}" rel="stylesheet" />
 <link href="${inputCSS}" rel="stylesheet" />
 <link href="${imgCSS}" rel="stylesheet" />
+<link href="${messagesCSS}" rel="stylesheet" />
 
 <script
 	src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
@@ -91,6 +93,7 @@
 			</ul>
 
 
+			<label class="error">${orderUnsuccess}</label>
 			<c:if test="${fn:length(cart) gt 0}">
 				<div class="table-responsive">
 					<table class="table table-striped">

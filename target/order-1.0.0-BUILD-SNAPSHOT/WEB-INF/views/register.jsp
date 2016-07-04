@@ -8,8 +8,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Register</title>
 
-<spring:url value="/resources/css/errors.css" var="errorsCss" />
-<link href="${errorsCss}" rel="stylesheet" />
+<spring:url value="/resources/css/messages.css" var="messagesCSS" />
+<link href="${messagesCSS}" rel="stylesheet" />
 
 <link rel="stylesheet"
 	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -29,7 +29,7 @@
 					</div>
 					<div class="col-sm-5">
 						<form:input path="username" class="form-control" type="text"
-							placeholder="username" />
+							placeholder="username" autofocus="autofocus"/>
 					</div>
 					<div class="col-sm-5">
 						<form:errors path="username" class="error" />

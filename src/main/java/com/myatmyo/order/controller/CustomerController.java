@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.myatmyo.order.dao.CustomerDAO;
-import com.myatmyo.order.model.Customer;;
+import com.myatmyo.order.model.Customer;
 
 /**
  * Handles requests for the application home page.
@@ -85,7 +85,6 @@ public class CustomerController {
 				ArrayList<Customer> customers = customerDao.getAll();
 
 				for (Customer c : customers) {
-					System.out.println(c.getUsername());
 					if (customer.getUsername().equals(c.getUsername())) {
 						model.addAttribute("message", "username is already exit");
 						return "register";

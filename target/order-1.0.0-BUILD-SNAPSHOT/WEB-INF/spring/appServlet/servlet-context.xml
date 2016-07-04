@@ -35,7 +35,11 @@
 	<beans:bean id="orderDao" class="com.myatmyo.order.dao.OrderDAOImpl">
 		<beans:property name="sessionFactory" ref="sessionFactory" />
 	</beans:bean>
-
+	
+	<beans:bean id="orderService" class="com.myatmyo.order.service.OrderServiceImpl"/>
+	
+	<beans:bean id="productService" class="com.myatmyo.order.service.ProductServiceImpl"/>
+	
 	<context:component-scan base-package="com.myatmyo.order,
 	com.myatmyo.order.controller,
 	com.myatmyo.order.dao,

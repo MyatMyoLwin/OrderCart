@@ -6,8 +6,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Login</title>
 
-<spring:url value="/resources/css/errors.css" var="errorsCss" />
-<link href="${errorsCss}" rel="stylesheet" />
+<spring:url value="/resources/css/messages.css" var="messagesCSS" />
+<link href="${messagesCSS}" rel="stylesheet" />
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet"
