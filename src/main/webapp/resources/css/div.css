@@ -1,0 +1,21 @@
+div.jumbotron {
+	background-color: lightblue;
+	font-size: 15px;
+	font-weight: bold;
+}
+div#bnrDiv1 {
+    float: left;
+    width: 60%;
+    text-align: right;
+}
+div#bnrDiv2 {
+    margin-left:60%;
+}
+div.container {
+	width: 80%;
+	background-color: white;
+	border-radius: 25px;
+	border: 2px solid #888888;
+	box-shadow: 2px 2px 2px #888888;
+	padding-bottom: 20px;
+}

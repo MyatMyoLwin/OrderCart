@@ -1,0 +1,14 @@
+@CHARSET "ISO-8859-1";
+
+.table-striped th {
+	text-align: center;
+}
+
+.table-striped td {
+	text-align: center;
+}
+.table-striped tr.buttonAndSearch td {
+	text-align: center;
+	border: none;
+	background-color: white;
+}
